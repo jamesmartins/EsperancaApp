@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="guice-3.0-no_aop.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/libs/guice-3.0-no_aop.jar!/"/>
+	</lib>
+	<lib name="roboguice-2.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/libs/roboguice-2.0.jar!/"/>
+	</lib>
+	<lib name="javax.inject-1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/libs/javax.inject-1.jar!/"/>
+	</lib>
+	<lib name="android-async-http-1.4.3.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/libs/android-async-http-1.4.3.jar!/"/>
+	</lib>
+	<lib name="gson-2.2.2.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/libs/gson-2.2.2.jar!/"/>
+	</lib>
+	<lib name="universal-image-loader-1.7.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/libs/universal-image-loader-1.7.0.jar!/"/>
+	</lib>
+	<levels>
+		<level name="slf4j-android-1.6.1-RC1" value="project"/>
+		<level name="epublib-core-latest" value="project"/>
+		<level name="roboguice-sherlock-1.5" value="project"/>
+		<level name="android-support-v4" value="project"/>
+		<level name="acra-4.4.0" value="project"/>
+	</levels>
+</component>

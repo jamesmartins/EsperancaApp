@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".LibraryActivity" >
+
+	<GridView
+	    android:id="@+id/grid_library"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="40dp"
+	    android:paddingLeft="8dp"
+	    android:paddingRight="8dp"
+	    android:gravity="center"
+        android:numColumns="1"
+	    tools:listitem="@layout/cell_library" />
+	
+   	<TextView
+	    android:id="@+id/text_empty"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:gravity="center"
+	    android:fontFamily="sans-serif-light"
+	    android:text="@string/title_empty_library"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />	
+	
+
+   	<LinearLayout android:id="@+id/options"
+   	    		  android:layout_height="wrap_content"
+   	    		  android:layout_width="fill_parent"
+   	    		  android:orientation="vertical"
+   	    		  android:layout_below="@id/grid_library"
+   	    		  android:gravity="bottom"
+   	    		  android:layout_centerHorizontal="true"
+   	    		  android:layout_alignParentBottom="true">
+   	
+	   	<TextView android:id="@+id/textdownload"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_marginTop="10dp"
+		    android:text="Downloads"
+		    android:textColor="#ffffff"
+		    android:alpha="0.3"
+		    android:textAppearance="@android:style/TextAppearance.Small"
+		    android:layout_centerHorizontal="true">
+		</TextView>
+		
+	   <TextView android:id="@+id/textcount"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/textdownload"
+		    android:gravity="center"
+		    android:textSize="50sp"
+		    android:layout_marginBottom="30dp"
+		    android:alpha="0.3"
+		    android:textColor="#ffffff"
+		    android:layout_centerHorizontal="true">
+		</TextView>   
+		
+		<ImageButton 
+		    android:id="@+id/image_share"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/textcount"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="4dp"
+		    android:background="@null"
+		    android:alpha="0.3"
+		    android:contentDescription="@string/image_share"
+		    android:src="@drawable/ic_action_share_2"/>
+		
+		<TextView android:id="@+id/text_share"
+		    	  android:layout_width="fill_parent"
+		    	  android:layout_height="wrap_content"
+		    	  android:layout_below="@id/image_share"
+		    	  android:layout_centerHorizontal="true"
+		    	  android:layout_marginTop="10dp"
+		    	  android:layout_marginBottom="30dp"
+		    	  android:gravity="center"
+		    	  android:text="Compartilhe"
+		    	  android:textColor="#ffffff"
+		    	  android:alpha="0.3"
+		    	  android:textAppearance="?android:attr/textAppearanceSmall"/>
+	   
+	</LinearLayout>
+		
+	<ProgressBar
+		android:id="@+id/progress_library"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerInParent="true"/>
+	
+</RelativeLayout>

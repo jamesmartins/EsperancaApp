@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <SeekBar
+        android:id="@+id/seek_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:max="100"
+        android:progress="50"
+        android:layout_gravity="left|center_vertical"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/button_minor"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_holo_grey"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:text="@string/label_a"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/button_bigger"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_holo_grey"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:layout_weight="1"
+            android:text="@string/label_a"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner_fontface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:entries="@array/font_labels"
+        android:layout_gravity="left|center_vertical"/>
+
+
+</LinearLayout>

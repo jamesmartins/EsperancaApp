@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="16dp"
+    	android:background="#EEEEEE">
+        
+        <ImageView
+	        android:id="@+id/image_cover"
+	        android:layout_width="140dp"
+	        android:layout_height="200dp"
+	        android:layout_alignParentTop="true"
+	        android:contentDescription="@string/description_cover" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_cover"
+            android:layout_toRightOf="@+id/image_cover"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+	        android:textStyle="bold"
+	        android:textSize="20sp" 
+	        android:ellipsize="marquee"/>
+
+        <TextView
+            android:id="@+id/text_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_title"
+            android:layout_below="@+id/text_title"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"  />
+
+        <TextView
+            android:id="@+id/text_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_author"
+            android:layout_below="@+id/text_author"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/text_page_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_category"
+            android:layout_below="@+id/text_category"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/text_ISBN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_page_number"
+            android:layout_below="@+id/text_page_number"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_ISBN"
+            android:layout_below="@+id/text_ISBN"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_holo_blue"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/image_cover"
+            android:layout_below="@+id/image_cover"
+            android:text="@string/label_description"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@drawable/divider" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:textIsSelectable="true"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp" />
+
+</LinearLayout>

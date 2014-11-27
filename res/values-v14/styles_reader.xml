@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.Reader" parent="@style/Theme.Sherlock.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_reader</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Reader</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Reader</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Reader</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Reader</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Reader</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_reader</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_reader</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Reader</item>
+        
+        
+    </style>
+
+    <style name="ActionBar.Solid.Reader" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_reader</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_reader</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_reader</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Reader</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Reader" parent="@style/Widget.Sherlock.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_reader</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Reader</item>
+    </style>
+	
+    <style name="PopupMenu.Reader" parent="@style/Widget.Sherlock.Light.ListPopupWindow">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_reader</item>	
+    </style>
+	
+    <style name="DropDownListView.Reader" parent="@style/Widget.Sherlock.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_reader</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Reader.Widget" parent="@style/Theme.Sherlock">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Reader</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Reader</item>
+    </style>
+
+</resources>
